@@ -1,0 +1,418 @@
+body {
+    /* font-family: Helvetica,Verdana,Arial,sans-serif; */
+    /*box-shadow: 0px 0px 3px 0px;*/
+}
+#main {
+    display: inline;
+    font-size: 16px;
+    line-height: 30px;
+}
+#mainContent {
+    width: 80%;
+    float: left;
+    padding: 1px;
+}
+#sideBar {
+    overflow: hidden;
+    padding: 0px 0px 10px 30px;
+   /* background: linear-gradient(to right, rgba(253, 108, 108, 0.2), rgba(249, 36, 94, 0));*/
+}
+@media screen and (min-width:600px) and (max-width:1000px){
+    body {
+        /* font-family: Helvetica,Verdana,Arial,sans-serif; */
+        /*box-shadow: 0px 0px 3px 0px;*/
+        /*margin: 5px;*/
+    }
+    #main {
+        display: block;
+    }
+    #mainContent {
+        width: 100%;
+        float: left;
+        overflow: hidden;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        padding: 2px 0px;
+    }
+    #sideBar {
+        overflow: hidden;
+        padding: 0px 10px 10px 10px;
+        float: left;
+    }  
+}
+@media screen and (max-width:600px){
+    body {
+        /* font-family: Helvetica,Verdana,Arial,sans-serif; */
+        /*box-shadow: 0px 0px 3px 0px;*/
+        /*margin: 5px;*/
+    }
+    #main {
+        display: block;
+    }
+    #mainContent {
+        width: 100%;
+        float: left;
+        overflow: hidden;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        padding: 2px 0px;
+    }
+     #sideBar {
+        overflow: hidden;
+        padding: 0px 10px 10px 10px;
+        width: 100%;
+    }  
+}
+
+#navigator {
+    border-bottom: 1px solid #000;
+    height: 40px;
+    line-height: 40px;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+h1, h2, h3, h4{
+	font-weight: normal;
+}
+#navigator #navList{
+    float: left;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+#navList li{
+    float: left;
+    width: 60px;
+    text-align: center;
+    list-style: none;
+}
+/*#navList li:hover {
+    float: left;
+    width: 60px;
+    text-align: center;
+    list-style: none;
+    animation: flash 1s;
+    animation-fill-mode: both;
+}*/
+.menu{
+    display: block;
+    float: left;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    list-style: none;
+}
+.menu:hover {
+    color: #FFFFFF;
+    background-color:#1E9FFF;
+    animation: flash 1s;
+    animation-fill-mode: both;
+}
+@keyframes flash {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        opacity: 1;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        opacity: 0;
+    }
+}
+
+li{
+    list-style: none;
+}
+.blogStats {
+    float: right;
+    padding-right: 60px;
+    /*color: #FFFFFF;*/
+}
+@media screen and (max-width:600px){
+    .blogStats {
+       display: none;
+    }
+}
+
+.day{
+    overflow: hidden;
+    /*padding-left: 1px;*/
+    padding: 0px 1px;
+}
+/*.day:hover{
+    padding-left: 0px;
+    padding: 10px 1px;
+    border-left: 1px solid #F92447;
+    overflow: hidden;
+}*/
+.day .dayTitle {
+    display: none;
+}
+.postTitle{
+    padding-top: 20px;
+}
+.postTitle2{
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    color: #2F4056;
+}
+.postTitle2:hover{
+    color: #282A91;
+}
+#sideBarMain h3 {
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    color: #FFF;
+    font-size: 18px;
+    height: 36px;
+    line-height: 40px;
+    font-weight: normal;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background: #c2c2c2;
+}
+#sideBarMain ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.c_b_p_desc {
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    line-height: 30px;
+}
+.c_b_p_desc_readmore {
+    margin-top: 5px; 
+    /* margin-bottom: 15px; */
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    /* position: absolute; */
+    float: right;
+    line-height: 25px;
+    height: 25px;
+    border: 1px solid #393D49;
+    color: #393D49;
+    border-radius: 3px;
+}
+.c_b_p_desc_readmore:hover{
+    color: #F92472;
+    border: 1px solid #F92472;
+    border-radius: 2px;
+}
+.postDesc {
+    float: right;
+}
+.entrylistItemPostDesc {
+    float: right;
+}
+.entrylistPosttitle {
+    font-weight: bold;
+    /* margin: 10px 0 10px 0; */
+}
+a.entrylistItemTitle {
+    font-weight: normal;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+}
+@media screen and (max-width:767px){
+    .postDesc {
+        display: none;
+    }
+    .entrylistItemPostDesc {
+        display: none;
+    }
+}
+.entrylistPosttitle{
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+.entrylistItem {
+    padding-top: 30px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.feedback_area_title {
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+
+.input_my_zzk {
+    width: 100px;
+    vertical-align: middle;
+    height: 20px;
+    border: 1px solid #000;
+}
+input.btn_my_zzk {
+    vertical-align: middle;
+    height: 24px;
+    width: 65px;
+    font-size: 12px;
+    text-align: center;
+    /* padding-left: 5px; */
+    /* padding-right: 5px; */
+    background-color: #FFF;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+a#cb_post_title_url {
+    font-weight: bold;
+    font-family: Helvetica, "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
+    font-size: 40px;
+    height: 45px;
+    line-height: 45px;
+}
+td.CalTodayDay {
+    font-weight: bold;
+}
+td.CalOtherMonthDay {
+    color: #c2c2c2;
+}
+.CalTitle {
+    width: 100%;
+    background: #c2c2c2;
+    color: #FFF;
+}
+td.CalNextPrev a {
+    color: #FFF;
+}
+th.CalDayHeader {
+    background: #c2c2c2;
+    color: #FFF;
+    font-weight: normal;
+}
+#green_channel {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    /* border: #c0c0c0 1px dashed; */
+    font-size: 12px;
+    /* width: 450px; */
+    /* text-align: center; */
+}
+div.commentform textarea {
+    width: 100%;
+    height: 100px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'PingFang SC','Helvetica Neue','Helvetica','Arial',sans-serif;
+}
+p#commentbox_opt {
+    text-align: right;
+}
+.comment_btn {
+    height: 25px;
+    width: 68px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #393D49;
+    line-height: 25px;
+    border-radius: 3px;
+    background: #FFF;
+}
+.commentbox_title_right {
+    float: left;
+    height: 22px;
+}
+
+
+
+/*生成博客目录的CSS*/
+#uprightsideBar{
+    font-size:16px;
+    font-family: Helvetica, "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
+    font-weight: normal;
+    text-align:left;
+    position:fixed;/*将div的位置固定到距离top:50px，right:0px的位置，这样div就会处在最右边的位置，距离顶部50px*/
+    top:50px;
+    right:0px;
+    width: auto;
+    height: auto; 
+}
+#sideBarTab{
+    float:left;
+    width:30px; 
+    border:1px solid #e5e5e5;
+    border-right:none;
+    text-align:center;
+    background:#ffffff;
+}
+
+#sideBarContents{
+    float:left;
+    overflow:auto; 
+    overflow-x:hidden;!important;
+    line-height: 30px;
+    width:300px;
+    min-height:150px;
+    max-height: 660px;
+    border:1px solid #e5e5e5;
+    border-right:none; 
+    background:#ffffff;
+}
+@media screen and (min-height:400px) and (max-height:700px){
+	#sideBarContents{
+	    float:left;
+	    overflow:auto; 
+	    overflow-x:hidden;!important;
+        line-height: 30px;
+	    width:300px;
+	    min-height:150px;
+	    max-height: 580px;
+	    border:1px solid #e5e5e5;
+	    border-right:none; 
+	    background:#ffffff;
+	}
+}
+@media screen and (max-height:400px){
+	#sideBarContents{
+	    float:left;
+	    overflow:auto; 
+	    overflow-x:hidden;!important;
+	    width:300px;
+    	line-height: 30px;
+	    min-height:150px;
+	    max-height: 290px;
+	    border:1px solid #e5e5e5;
+	    border-right:none; 
+	    background:#ffffff;
+	}
+}
+#sideBarContents dl{
+    margin:0;
+    padding:0;
+}
+
+#sideBarContents dt{
+    margin-top:5px;
+    margin-left:5px;
+}
+
+#sideBarContents dd, dt {
+    cursor: pointer;
+}
+
+#sideBarContents dd:hover, dt:hover {
+    color: #282A91;
+}
+#sideBarContents dd{
+    margin-left:20px;
+}
