@@ -1,6 +1,6 @@
 body {
-    /* font-family: Helvetica,Verdana,Arial,sans-serif; */
-    /*box-shadow: 0px 0px 3px 0px;*/
+    margin: 0px;
+    padding: 0px;
 }
 #main {
     display: inline;
@@ -10,62 +10,58 @@ body {
 #mainContent {
     width: 80%;
     float: left;
+    overflow: hidden;
     padding: 1px;
+    margin: 0px 20px;
 }
 #sideBar {
     overflow: hidden;
-    padding: 0px 0px 10px 30px;
+    padding: 0px;
+    border-left: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
    /* background: linear-gradient(to right, rgba(253, 108, 108, 0.2), rgba(249, 36, 94, 0));*/
 }
 @media screen and (min-width:600px) and (max-width:1000px){
-    body {
-        /* font-family: Helvetica,Verdana,Arial,sans-serif; */
-        /*box-shadow: 0px 0px 3px 0px;*/
-        /*margin: 5px;*/
-    }
     #main {
         display: block;
     }
     #mainContent {
+    	display: block;
         width: 100%;
-        float: left;
         overflow: hidden;
-        margin-top: 1px;
-        margin-bottom: 1px;
-        padding: 2px 0px;
+        margin: 0px;
+        padding: 0px;
     }
     #sideBar {
+    	display: block;
         overflow: hidden;
         padding: 0px 10px 10px 10px;
         float: left;
+        border: none;
     }  
 }
 @media screen and (max-width:600px){
-    body {
-        /* font-family: Helvetica,Verdana,Arial,sans-serif; */
-        /*box-shadow: 0px 0px 3px 0px;*/
-        /*margin: 5px;*/
-    }
     #main {
         display: block;
     }
     #mainContent {
         width: 100%;
-        float: left;
         overflow: hidden;
-        margin-top: 1px;
-        margin-bottom: 1px;
-        padding: 2px 0px;
+        padding: 1px 0px;
+        margin: 0px;
+        padding: 0px;
     }
      #sideBar {
         overflow: hidden;
         padding: 0px 10px 10px 10px;
         width: 100%;
+        border: none;
+        margin: 0px;
     }  
 }
 
 #navigator {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #c2c2c2;
     height: 40px;
     line-height: 40px;
     font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
@@ -128,7 +124,7 @@ li{
 }
 .blogStats {
     float: right;
-    padding-right: 60px;
+    padding-right: 70px;
     /*color: #FFFFFF;*/
 }
 @media screen and (max-width:600px){
@@ -216,10 +212,12 @@ li{
     border-radius: 2px;
 }
 .postDesc {
-    float: right;
+    text-align: right;
+    border-bottom: 1px #c2c2c2 dotted;
 }
 .entrylistItemPostDesc {
-    float: right;
+    text-align: right;
+    border-bottom: 1px #c2c2c2 dotted;
 }
 .entrylistPosttitle {
     font-weight: bold;
@@ -299,16 +297,16 @@ th.CalDayHeader {
     font-weight: normal;
 }
 #green_channel {
-    padding: 10px 0;
+    padding: 0;
     margin-bottom: 10px;
     margin-top: 10px;
-    /* border: #c0c0c0 1px dashed; */
+    border: none;
     font-size: 12px;
-    /* width: 450px; */
-    /* text-align: center; */
+    width: 100%;
+    text-align: left;
 }
 div.commentform textarea {
-    width: 100%;
+    width: 99%;
     height: 100px;
     font-size: 13px;
     border: 1px solid #ccc;
@@ -342,7 +340,7 @@ p#commentbox_opt {
     font-weight: normal;
     text-align:left;
     position:fixed;/*将div的位置固定到距离top:50px，right:0px的位置，这样div就会处在最右边的位置，距离顶部50px*/
-    top:50px;
+    top:40px;
     right:0px;
     width: auto;
     height: auto; 
@@ -361,9 +359,9 @@ p#commentbox_opt {
     overflow:auto; 
     overflow-x:hidden;!important;
     line-height: 30px;
-    width:300px;
+    width:280px;
     min-height:150px;
-    max-height: 660px;
+    max-height: 670px;
     border:1px solid #e5e5e5;
     border-right:none; 
     background:#ffffff;
@@ -374,9 +372,9 @@ p#commentbox_opt {
 	    overflow:auto; 
 	    overflow-x:hidden;!important;
         line-height: 30px;
-	    width:300px;
+	    width:280px;
 	    min-height:150px;
-	    max-height: 580px;
+	    max-height: 590px;
 	    border:1px solid #e5e5e5;
 	    border-right:none; 
 	    background:#ffffff;
@@ -387,7 +385,7 @@ p#commentbox_opt {
 	    float:left;
 	    overflow:auto; 
 	    overflow-x:hidden;!important;
-	    width:300px;
+	    width:280px;
     	line-height: 30px;
 	    min-height:150px;
 	    max-height: 290px;
