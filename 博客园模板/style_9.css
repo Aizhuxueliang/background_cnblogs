@@ -414,3 +414,68 @@ p#commentbox_opt {
 #sideBarContents dd{
     margin-left:20px;
 }
+
+
+/*heightlight*/
+.cnblogs-markdown pre {
+    white-space: pre!important
+}
+
+.cnblogs-markdown .hljs {
+    display: block!important;
+    overflow-x: auto!important;
+    padding: 1em!important;
+    background: #282c34!important;
+    border: 1px solid #fff!important;
+    border-radius: 5px!important;
+    font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace!important;
+    font-size: 15px!important
+}
+
+.hljs,.hljs-subst,.hljs-tag {
+    color: #f8f8f2!important
+}
+
+.hljs-emphasis,.hljs-strong {
+    color: #a8a8a2!important
+}
+
+.hljs-bullet,.hljs-link,.hljs-literal,.hljs-number,.hljs-quote {
+    color: #ae81ff!important
+}
+
+.hljs-meta,.hljs-regexp {
+    color: #fd971f!important
+}
+
+.hljs-built_in,.hljs-builtin-name,.hljs-code,.hljs-section,.hljs-selector-class,.hljs-title {
+    color: #a6e22e!important
+}
+
+.hljs-strong {
+    font-weight: 700
+}
+
+.hljs-emphasis {
+    font-style: italic!important
+}
+
+.hljs-attr,.hljs-name,.hljs-selector-tag,.hljs-symbol {
+    color: #f74449!important
+}
+
+.hljs-attribute,.hljs-keyword {
+    color: #66d9ef!important
+}
+
+.hljs-class .hljs-title,.hljs-params {
+    color: #f8f8f2!important
+}
+
+.hljs-addition,.hljs-selector-attr,.hljs-selector-id,.hljs-selector-pseudo,.hljs-string,.hljs-template-variable,.hljs-type,.hljs-variable {
+    color: #e6db74!important
+}
+
+.hljs-comment,.hljs-deletion {
+    color: #999!important
+}
