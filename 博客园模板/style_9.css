@@ -9,7 +9,7 @@ body {
 }
 #mainContent {
     width: 80%;
-    float: left;
+    float: right;
     overflow: hidden;
     padding: 1px;
     margin: 0px 20px;
@@ -17,8 +17,8 @@ body {
 #sideBar {
     overflow: hidden;
     padding: 0px;
-    border-left: 1px solid #c2c2c2;
-    border-bottom: 1px solid #c2c2c2;
+   /*  border-right: 1px solid #c2c2c2;
+   border-bottom: 1px solid #c2c2c2; */
    /* background: linear-gradient(to right, rgba(253, 108, 108, 0.2), rgba(249, 36, 94, 0));*/
 }
 @media screen and (min-width:600px) and (max-width:1000px){
@@ -61,7 +61,7 @@ body {
 }
 
 #navigator {
-    border-bottom: 1px solid #c2c2c2;
+	background: #2F4056;
     height: 40px;
     line-height: 40px;
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
@@ -99,25 +99,28 @@ h1, h2, h3, h4{
 .menu{
     display: block;
     float: left;
-    width: 60px;
+    width: 70px;
     height: 40px;
     text-align: center;
     list-style: none;
+    color: #FFF;
 }
 .menu:hover {
-    color: #FFFFFF;
+	background-color: #FFF;
+	color: #2F4056;
+    /* color: #FFFFFF;
     background-color:#1E9FFF;
     animation: flash 1s;
-    animation-fill-mode: both;
+    animation-fill-mode: both; */
 }
-@keyframes flash {
+/* @keyframes flash {
     0%, 20%, 40%, 60%, 80%, 100% {
         opacity: 1;
     }
     10%, 30%, 50%, 70%, 90% {
         opacity: 0;
     }
-}
+} */
 
 li{
     list-style: none;
@@ -163,7 +166,7 @@ li{
 }
 #sideBarMain h3 {
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
-    color: #FFF;
+    /* color: #FFF; */
     font-size: 18px;
     height: 36px;
     line-height: 40px;
@@ -172,7 +175,8 @@ li{
     margin-block-end: 0em;
     margin-bottom: 0px;
     margin-top: 0px;
-    background: #c2c2c2;
+    background: #F2F6FC;
+    text-align: center;
 }
 #sideBarMain ul {
     display: block;
@@ -281,19 +285,19 @@ td.CalTodayDay {
     font-weight: bold;
 }
 td.CalOtherMonthDay {
-    color: #c2c2c2;
+   /*  color: #c2c2c2; */
 }
 .CalTitle {
     width: 100%;
-    background: #c2c2c2;
-    color: #FFF;
+    background: #F2F6FC;
+    /* color: #FFF; */
 }
 td.CalNextPrev a {
-    color: #FFF;
+   /*  color: #FFF; */
 }
 th.CalDayHeader {
-    background: #c2c2c2;
-    color: #FFF;
+    background: #F2F6FC;
+    /* color: #FFF; */
     font-weight: normal;
 }
 #green_channel {
