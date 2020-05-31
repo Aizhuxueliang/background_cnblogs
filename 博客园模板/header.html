@@ -223,11 +223,6 @@ var BlogDirectory = {
 
     /*控制侧边栏显隐*/
     createSideBar:function (){
-        var mainContent = document.getElementById("mainContent");
-        mainContent.style.float = "none";
-        var sideBar = document.getElementById("sideBar");
-        sideBar.style.display = "none";
-
         var showSideBar = document.createElement('BUTTON');
         showSideBar.className = 'showSideBar';
         showSideBar.setAttribute('id', 'showSideBar');
@@ -235,6 +230,17 @@ var BlogDirectory = {
         showSideBar.appendChild(btnBar);
 
         document.body.appendChild(showSideBar);
+
+        showSideBar.onclick = function() {
+            if (document.getElementById("mainContent").style.float == 'right' && document.getElementById("sideBar").style.display == 'block') {     
+                document.getElementById("mainContent").style.float = "none";
+                document.getElementById("sideBar").style.display = "none";
+            } else {
+                document.getElementById("mainContent").style.float = "right";
+                document.getElementById("sideBar").style.display = "block";
+            }
+        }
+
     }
     
 };
