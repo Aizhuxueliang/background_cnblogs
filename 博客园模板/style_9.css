@@ -17,8 +17,8 @@ body {
 #sideBar {
     overflow: hidden;
     padding: 0px;
-   /*  border-right: 1px solid #c2c2c2;
-   border-bottom: 1px solid #c2c2c2; */
+    border-right: 1px solid #2F4056;
+    border-bottom: 1px solid #2F4056;
    /* background: linear-gradient(to right, rgba(253, 108, 108, 0.2), rgba(249, 36, 94, 0));*/
 }
 @media screen and (min-width:600px) and (max-width:1000px){
@@ -285,7 +285,7 @@ td.CalTodayDay {
     font-weight: bold;
 }
 td.CalOtherMonthDay {
-   /*  color: #c2c2c2; */
+    color: #c2c2c2;
 }
 .CalTitle {
     width: 100%;
@@ -317,7 +317,7 @@ div.commentform textarea {
     border-radius: 5px;
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
-p#commentbox_opt {
+p #commentbox_opt {
     text-align: right;
 }
 .comment_btn {
