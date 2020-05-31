@@ -328,7 +328,7 @@ p #commentbox_opt {
     font-weight: normal;
     text-align:left;
     position:fixed;/*将div的位置固定到距离top:50px，right:0px的位置，这样div就会处在最右边的位置，距离顶部50px*/
-    top:62px;
+    top:83px;
     right:0px;
     width: auto;
     height: auto; 
@@ -342,7 +342,9 @@ p #commentbox_opt {
     background:#ffffff;
 }
 
-#sideBarTab h4{
+#sideBarTab h4 {
+    margin: 0px;
+    padding: 0px;
     display: block;
     margin-block-start: 0px;
     margin-block-end: 0px;
@@ -417,19 +419,22 @@ margin-block-start: 1.33em;
 }
 
 
-#showSideBar{
+#showSideBar {
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
     font-weight: normal;
-    text-align:left;
-    position:fixed;
-    top:40px;
-    right:0px;
-    width: auto;
-    height: auto; 
-    border:1px solid #e5e5e5;
-    border-right:none;
+    font-size: 16px;
+    text-align: center;
+    position: fixed;
+    top: 40px;
+    right: 0px;
+    width: 21px;
     background: #FFF;
     outline: none;
+    writing-mode: vertical-lr;
+    border: 1px solid #e5e5e5;
+    border-right: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 
