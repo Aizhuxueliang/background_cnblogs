@@ -1,12 +1,10 @@
 # 修改博客园样式
-代码自取，喜欢点star，效果参考链接：https://www.cnblogs.com/nqdxt
+- 代码自取:https://github.com/Aizhuxueliang/background_cnblogs.git
+- 喜欢点star，效果参考链接：https://www.cnblogs.com/nqdxt
 ### 修改博客园样式可以借鉴的blog
-
-> https://www.cnblogs.com/esofar/p/cnblogs-theme-silence.html
-> https://www.cnblogs.com/xuehaoyue/p/6650533.html
-> https://www.cnblogs.com/jingmoxukong/p/7826982.html
-
+1. https://www.cnblogs.com/esofar/p/cnblogs-theme-silence.html 
+2.  https://www.cnblogs.com/xuehaoyue/p/6650533.html 
+3.  https://www.cnblogs.com/jingmoxukong/p/7826982.html
 ### 个人认为比较好看的blog
-
-> https://www.cnblogs.com/jajian/ 
-> https://www.cnblogs.com/yanggb/
+1. https://www.cnblogs.com/jajian/  
+2. https://www.cnblogs.com/yanggb/
