@@ -41,7 +41,7 @@ body {
         transform: translateX(0);
     }
 }	
-@media screen and (min-width:600px) and (max-width:1000px){
+@media screen and (min-width:600px) and (max-width:1067px){
     #main {
         display: block;
     }
