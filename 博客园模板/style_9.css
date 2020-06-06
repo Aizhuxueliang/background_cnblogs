@@ -367,20 +367,15 @@ p #commentbox_opt {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-
-
-margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-
 #sideBarContents{
 	letter-spacing: normal;
     float:left;
     overflow:auto; 
     overflow-x:hidden;!important;
-    line-height: 30px;
-    width:280px;
-    min-height:150px;
-    max-height: 670px;
+    line-height: 25px;
+    font-size: 13px;
+    width:270px;
+    max-height: 630px;
     border:1px solid #e5e5e5;
     border-right:none; 
     background:#ffffff;
@@ -390,10 +385,10 @@ margin-block-start: 1.33em;
 	    float:left;
 	    overflow:auto; 
 	    overflow-x:hidden;!important;
-        line-height: 30px;
-	    width:280px;
-	    min-height:150px;
-	    max-height: 590px;
+        line-height: 25px;
+        font-size: 13px;
+	    width:200px;
+	    max-height: 550px;
 	    border:1px solid #e5e5e5;
 	    border-right:none; 
 	    background:#ffffff;
@@ -404,10 +399,10 @@ margin-block-start: 1.33em;
 	    float:left;
 	    overflow:auto; 
 	    overflow-x:hidden;!important;
-	    width:280px;
-    	line-height: 30px;
-	    min-height:150px;
-	    max-height: 290px;
+	    width:200px;
+    	line-height: 25px;
+        font-size: 13px;
+	    max-height: 260px;
 	    border:1px solid #e5e5e5;
 	    border-right:none; 
 	    background:#ffffff;
