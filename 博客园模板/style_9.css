@@ -77,6 +77,11 @@ body {
         width: 100%;
         border: none;
         margin: 0px;
+    }
+    #sideBar {
+	    width: auto;
+	    position: relative;
+	    margin: 0 10px;
     }  
 }
 
