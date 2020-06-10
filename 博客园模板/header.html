@@ -240,6 +240,25 @@ window.onload=function(){
     BlogDirectory.createBlogDirectory("cnblogs_post_body","h2","h3",20);
     BlogDirectory.createSideBar();
 }
+
+//通过滚动条控制导航条的展现隐藏
+var oldScrollNum = 0;
+window.onscroll = function(){
+    var t = document.documentElement.scrollTop || document.body.scrollTop;
+    if (t>oldScrollNum) {//下滑
+        if (t>27) {
+            $("#navigator").css("margin-top","-107px");//顶部导航
+        }
+    } else if (t == 0) {
+        $("#navigator").css("margin-top","0px");//顶部导航
+    } else {//上拉
+        //防止用a链接跳转也触发效果
+        if (oldScrollNum-t<20) {
+            $("#navigator").css("margin-top","-67px");//顶部导航
+        }
+    }
+    oldScrollNum = t;
+}
 </script>
 
 <!-- 鼠标点击效果 -->

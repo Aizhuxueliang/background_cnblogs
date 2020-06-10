@@ -84,6 +84,9 @@ body {
 	    margin: 0 10px;
     }  
 }
+#header{
+	height: 107px;
+}
 
 #blogTitle {
    width: 100%;
@@ -100,6 +103,10 @@ body {
     line-height: 40px;
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
     padding: 0px;
+    transition:0.5s ease-in-out;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 a {
     text-decoration: none;
