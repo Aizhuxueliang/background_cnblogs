@@ -351,6 +351,9 @@ p #commentbox_opt {
     float: left;
     height: 22px;
 }
+#poweredby{
+	display: none;
+}
 #footer{
 	margin: auto;
     text-align: center;
