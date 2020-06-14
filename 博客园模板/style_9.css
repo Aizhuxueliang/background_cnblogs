@@ -239,6 +239,10 @@ li{
     text-align: right;
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
     border-bottom: 1px #c2c2c2 dotted;
+    color: #909399;
+}
+.postDesc a{
+	color: #909399;
 }
 #myposts .postDesc2 {
     text-align: right;
@@ -318,21 +322,13 @@ th.CalDayHeader {
     font-weight: normal;
 }
 #green_channel {
-    padding: 0;
+    padding: 10px 0;
     margin-bottom: 10px;
     margin-top: 10px;
-    border: none;
+    border: none; 
     font-size: 12px;
-    width: 100%;
-    text-align: left;
-}
-div.commentform textarea {
-    width: 99%;
-    height: 100px;
-    font-size: 13px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    width: 355px;
+    text-align: center;
 }
 p #commentbox_opt {
     text-align: right;
