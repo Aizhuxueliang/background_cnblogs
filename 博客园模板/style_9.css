@@ -173,7 +173,7 @@ li{
     font-size: 20px;
     height: 40px;
     line-height: 40px;
-    color: #2F4056;
+    color: #303133;
 }
 .postTitle2:hover{
     color: #EC6149;
@@ -221,7 +221,7 @@ li{
 .c_b_p_desc_readmore {
     display: block;
     float: right;
-    color: #393D49;
+    color: #303133;
 }
 .c_b_p_desc_readmore:hover{
     color: #F92472;
