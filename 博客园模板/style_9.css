@@ -17,13 +17,19 @@ body {
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 }
 #sideBar {
+    position: fixed;
+    margin-top: -107px;
     overflow: hidden;
+    overflow-y: scroll;
     padding: 0px;
     display: none;
     background: #EBEEF5;
     opacity: 0;
     animation: fadeInLeft 1s;
     animation-fill-mode: both;
+}
+#sideBarMain{
+    padding-bottom: 100px;
 }
 @keyframes fadeInLeft {
     0% {
@@ -88,6 +94,7 @@ body {
 }
 #header{
 	height: 107px;
+    transition: 1s ease-in-out;
 }
 
 #blogTitle {
@@ -528,4 +535,21 @@ p #commentbox_opt {
 
 .hljs-comment,.hljs-deletion {
     color: #999!important
+}
+
+
+::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width : 3px;  /*高宽分别对应横竖滚动条的尺寸*/
+    height: 3px;
+}
+::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    background: #C0C4CC;
+}
+::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    background: #FFF;
 }

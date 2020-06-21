@@ -184,9 +184,18 @@ var BlogDirectory = {
             if (document.getElementById("mainContent").style.float == 'right' && document.getElementById("sideBar").style.display == 'block') {     
                 document.getElementById("mainContent").style.float = "none";
                 document.getElementById("sideBar").style.display = "none";
+                document.getElementById("header").style.margin = "0px";
             } else {
                 document.getElementById("mainContent").style.float = "right";
                 document.getElementById("sideBar").style.display = "block";
+                
+                /*获取网页可用高度*/
+			    var availHeight = window.screen.availHeight;
+			    document.getElementById("sideBar").style.height = availHeight + "px";
+			    /*获取#mainContent到左边的距离*/
+			    var offsetLeft = document.getElementById("mainContent").offsetLeft;
+			    document.getElementById("sideBar").style.width = offsetLeft + "px";
+			    document.getElementById("header").style.marginLeft = offsetLeft + "px";
             }
         }
 
