@@ -1,6 +1,14 @@
 body {
     margin: 0px;
     padding: 0px;
+    scrollbar-arrow-color: #FFF; /**//*三角箭头的颜色*/ 
+	scrollbar-face-color: #FFF; /**//*立体滚动条的颜色*/ 
+	scrollbar-3dlight-color: #FFF; /**//*立体滚动条亮边的颜色*/ 
+	scrollbar-highlight-color: #FFF; /**//*滚动条空白部分的颜色*/ 
+	scrollbar-shadow-color: #FFF; /**//*立体滚动条阴影的颜色*/ 
+	scrollbar-darkshadow-color: #FFF; /**//*立体滚动条强阴影的颜色*/ 
+	scrollbar-track-color: #FFF; /**//*立体滚动条背景颜色*/ 
+	scrollbar-base-color:#FFF; /**//*滚动条的基本颜色*/ 
 }
 #main {
     display: inline;
@@ -25,6 +33,7 @@ body {
     display: none;
     background: #EBEEF5;
     opacity: 0;
+    z-index: 100;
     animation: fadeInLeft 1s;
     animation-fill-mode: both;
 }
@@ -33,11 +42,11 @@ body {
 }
 @keyframes fadeInLeft {
     0% {
-        opacity: 0.5;
+        opacity: 0.8;
         transform: translateX(-200px);
     }
     50% {
-        opacity: 0.8;
+        opacity: 0.3;
         transform: translateX(5px);
     }
     70% {
@@ -61,11 +70,7 @@ body {
         padding: 0px;
     }
     #sideBar {
-    	display: block;
-        overflow: hidden;
-        padding: 0px 10px 10px 10px;
-        float: left;
-        border: none;
+    	display: none;
     }  
 }
 @media screen and (max-width:600px){
@@ -79,17 +84,8 @@ body {
         margin: 0px;
         padding: 0px;
     }
-     #sideBar {
-        overflow: hidden;
-        padding: 0px 10px 10px 10px;
-        width: 100%;
-        border: none;
-        margin: 0px;
-    }
     #sideBar {
-	    width: auto;
-	    position: relative;
-	    margin: 0 10px;
+	    display: none;
     }  
 }
 #header{
@@ -101,7 +97,6 @@ body {
    width: 100%;
    height: 67px;
    background-image: url(https://images.cnblogs.com/cnblogs_com/nqdxt/1226816/o_200607102144font4.png);
-   /*background-position: center center;*/
    background-repeat: no-repeat;
    background-attachment: scroll;
    background-size: auto 100%;
@@ -158,7 +153,6 @@ li{
 .blogStats {
     float: right;
     padding-right: 70px;
-    /*color: #FFFFFF;*/
 }
 @media screen and (max-width:600px){
     .blogStats {
@@ -538,18 +532,22 @@ p #commentbox_opt {
 }
 
 
+/*滚动条整体样式*/
 ::-webkit-scrollbar {
-    /*滚动条整体样式*/
     width : 3px;  /*高宽分别对应横竖滚动条的尺寸*/
     height: 3px;
 }
+/*滚动条里面小方块*/
 ::-webkit-scrollbar-thumb {
-    /*滚动条里面小方块*/
     border-radius: 3px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
     background: #C0C4CC;
 }
+/*滚动条里面轨道*/
 ::-webkit-scrollbar-track {
-    /*滚动条里面轨道*/
     background: #FFF;
+}
+/*定义两端按钮的样式*/
+::-webkit-scrollbar-button {
+    display: none;
 }
