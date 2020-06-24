@@ -1,14 +1,6 @@
 body {
     margin: 0px;
     padding: 0px;
-    scrollbar-arrow-color: #FFF; /**//*三角箭头的颜色*/ 
-	scrollbar-face-color: #FFF; /**//*立体滚动条的颜色*/ 
-	scrollbar-3dlight-color: #FFF; /**//*立体滚动条亮边的颜色*/ 
-	scrollbar-highlight-color: #FFF; /**//*滚动条空白部分的颜色*/ 
-	scrollbar-shadow-color: #FFF; /**//*立体滚动条阴影的颜色*/ 
-	scrollbar-darkshadow-color: #FFF; /**//*立体滚动条强阴影的颜色*/ 
-	scrollbar-track-color: #FFF; /**//*立体滚动条背景颜色*/ 
-	scrollbar-base-color:#FFF; /**//*滚动条的基本颜色*/ 
 }
 #main {
     display: inline;
@@ -70,7 +62,11 @@ body {
         padding: 0px;
     }
     #sideBar {
-    	display: none;
+    	display: block;
+        overflow: hidden;
+        padding: 0px 10px 10px 10px;
+        float: left;
+        border: none;
     }  
 }
 @media screen and (max-width:600px){
@@ -85,7 +81,11 @@ body {
         padding: 0px;
     }
     #sideBar {
-	    display: none;
+	    overflow: hidden;
+        padding: 0px 10px 10px 10px;
+        width: 100%;
+        border: none;
+        margin: 0px;
     }  
 }
 #header{
