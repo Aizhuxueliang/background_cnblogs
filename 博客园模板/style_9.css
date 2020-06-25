@@ -50,7 +50,7 @@ body {
         transform: translateX(0);
     }
 }	
-@media screen and (min-width:600px) and (max-width:1067px){
+@media screen and (min-width:767px) and (max-width:1067px){
     #main {
         display: block;
     }
@@ -63,13 +63,14 @@ body {
     }
     #sideBar {
     	display: block;
-        overflow: hidden;
+        overflow-y: scroll;
         padding: 0px 10px 10px 10px;
         float: left;
         border: none;
+        width: 278px;
     }  
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:767px){
     #main {
         display: block;
     }
@@ -444,7 +445,6 @@ p #commentbox_opt {
     margin-left:20px;
 }
 
-
 #showSideBar {
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
     font-weight: normal;
@@ -464,7 +464,6 @@ p #commentbox_opt {
     margin: 0px;
     padding: 0px;
 }
-
 
 
 /*heightlight*/
