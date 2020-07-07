@@ -23,14 +23,11 @@ body {
     overflow-y: scroll;
     padding: 0px;
     display: none;
-    background: #EBEEF5;
+    /* background: #EBEEF5; */
     opacity: 0;
     z-index: 100;
     animation: fadeInLeft 1s;
     animation-fill-mode: both;
-}
-#sideBarMain{
-    padding-bottom: 100px;
 }
 @keyframes fadeInLeft {
     0% {
@@ -103,7 +100,7 @@ body {
    background-size: auto 100%;
 }
 #navigator {
-	background: #2F4056;
+	background: #F2F6FC;
     height: 40px;
     line-height: 40px;
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
@@ -130,21 +127,21 @@ h1, h2, h3, h4{
 }
 #navList li{
     float: left;
-    width: 70px;
+    width: 90px;
     text-align: center;
     list-style: none;
 }
 .menu{
     display: block;
     float: left;
-    width: 70px;
+    width: 90px;
     height: 40px;
     text-align: center;
     list-style: none;
-    color: #FFF;
+    color: #606266;
 }
 .menu:hover {
-	background-color: #FFF;
+	background-color: #EBEEF5;
 	color: #2F4056;
 }
 
@@ -152,8 +149,7 @@ li{
     list-style: none;
 }
 .blogStats {
-    float: right;
-    padding-right: 70px;
+    color: #606266;
 }
 @media screen and (max-width:600px){
     .blogStats {
@@ -549,4 +545,95 @@ p #commentbox_opt {
 /*定义两端按钮的样式*/
 ::-webkit-scrollbar-button {
     display: none;
+}
+
+:after, :before {
+    font-family: Font Awesome\ 5 free,Font Awesome\ 5 Brands;
+    font-weight: 700;
+}
+#header #navigator #navList li #blog_nav_sitehome:before {
+    content: "\f781";
+    color: #3273dc;
+}
+#header #navigator #navList li #blog_nav_myhome:before {
+    content: "\f015";
+    color: #00d1b2;
+}
+#header #navigator #navList li #blog_nav_newpost:before {
+    content: "\f304";
+    color: #e7339f;
+} 
+#header #navigator #navList li #blog_nav_contact:before {
+    content: "\f0e0";
+    color: #48c774;
+}
+#header #navigator #navList li #blog_nav_rss:before {
+    content: "\f143";
+    color: #ffd257;
+}
+#header #navigator #navList li #blog_nav_admin:before {
+    content: "\f02d";
+    color: #00d1b2;
+}
+
+
+#sidebar_news{
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+.mySearch{
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+#calendar{
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px auto; 
+}
+#sidebar_shortcut{
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px auto; 
+}
+#sidebar_recentposts{
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px auto; 
+}
+#sidebar_toptags{
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+#sidebar_scorerank{
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+#sidebar_categories{
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+#sidebar_recentcomments{
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+#sidebar_topviewedposts{
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+#sidebar_topcommentedposts{
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+#sidebar_topdiggedposts{
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px auto;
 }
