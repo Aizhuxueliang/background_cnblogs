@@ -58,7 +58,7 @@ body {
         padding: 0px;
     }
     #sideBar {
-        float: left;
+    	position: relative;
         border: none;
         width: 278px;
     }  
@@ -350,6 +350,7 @@ p #commentbox_opt {
     right:0px;
     width: auto;
     height: auto; 
+    z-index: 1000;
 }
 #sideBarTab{
     float:left;
@@ -451,6 +452,7 @@ p #commentbox_opt {
     border-right: none;
     margin: 0px;
     padding: 0px;
+    z-index: 1000;
 }
 
 
@@ -539,9 +541,11 @@ p #commentbox_opt {
     display: none;
 }
 
+
 :after, :before {
     font-family: Font Awesome\ 5 free,Font Awesome\ 5 Brands;
     font-weight: 700;
+    padding-right: 5px;
 }
 #header #navigator #navList li #blog_nav_sitehome:before {
     content: "\f781";

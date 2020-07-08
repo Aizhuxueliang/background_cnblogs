@@ -197,7 +197,11 @@ var MyblOg = {
                     document.getElementById("header").style.marginLeft = offsetLeft + "px";
                 };
             }else{
-                document.getElementById("sideBar").style.width = "100%";
+                
+                if (w < 768) {
+                    document.getElementById("sideBar").style.width = "100%"; 
+                }
+                
                 document.getElementById("header").style.marginLeft = "0px";
                 if (document.getElementById("mainContent").style.float == 'right' && document.getElementById("sideBar").style.display == 'block') {     
                     document.getElementById("mainContent").style.float = "none";
@@ -235,7 +239,10 @@ window.onresize = function(){
         
     }else{
         
-        document.getElementById("sideBar").style.width = "100%";
+        if (w < 768) {
+            document.getElementById("sideBar").style.width = "100%"; 
+        }
+                
         document.getElementById("header").style.marginLeft = "0px";
         document.getElementById("mainContent").style.float = "none";
         document.getElementById("sideBar").style.display = "none";
