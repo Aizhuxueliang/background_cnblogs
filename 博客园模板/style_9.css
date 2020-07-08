@@ -52,16 +52,12 @@ body {
         display: block;
     }
     #mainContent {
-    	display: block;
         width: 100%;
         overflow: hidden;
         margin: 0px;
         padding: 0px;
     }
     #sideBar {
-    	display: block;
-        overflow-y: scroll;
-        padding: 0px 10px 10px 10px;
         float: left;
         border: none;
         width: 278px;
@@ -74,13 +70,10 @@ body {
     #mainContent {
         width: 100%;
         overflow: hidden;
-        padding: 1px 0px;
         margin: 0px;
         padding: 0px;
     }
     #sideBar {
-	    overflow: hidden;
-        padding: 0px 10px 10px 10px;
         width: 100%;
         border: none;
         margin: 0px;
@@ -88,7 +81,6 @@ body {
 }
 #header{
 	height: 107px;
-    transition: 1s ease-in-out;
 }
 
 #blogTitle {
@@ -100,7 +92,7 @@ body {
    background-size: auto 100%;
 }
 #navigator {
-	background: #F2F6FC;
+	background: #f8f8f9;
     height: 40px;
     line-height: 40px;
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
@@ -579,61 +571,61 @@ p #commentbox_opt {
 
 #sidebar_news{
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin: 10px auto;
+    border-radius: 2px;
+    margin: 10px;
 }
 .mySearch{
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin: 10px auto;
+    border-radius: 2px;
+    margin: 10px;
 }
 #calendar{
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin: 10px auto; 
+    border-radius: 2px;
+    margin: 10px; 
 }
 #sidebar_shortcut{
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin: 10px auto; 
+    border-radius: 2px;
+    margin: 10px; 
 }
 #sidebar_recentposts{
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin: 10px auto; 
+    border-radius: 2px;
+    margin: 10px; 
 }
 #sidebar_toptags{
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin: 10px auto;
+    border-radius: 2px;
+    margin: 10px;
 }
 #sidebar_scorerank{
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin: 10px auto;
+    border-radius: 2px;
+    margin: 10px;
 }
 #sidebar_categories{
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin: 10px auto;
+    border-radius: 2px;
+    margin: 10px;
 }
 #sidebar_recentcomments{
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin: 10px auto;
+    border-radius: 2px;
+    margin: 10px;
 }
 #sidebar_topviewedposts{
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin: 10px auto;
+    border-radius: 2px;
+    margin: 10px;
 }
 #sidebar_topcommentedposts{
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin: 10px auto;
+    border-radius: 2px;
+    margin: 10px;
 }
 #sidebar_topdiggedposts{
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin: 10px auto;
+    border-radius: 2px;
+    margin: 10px;
 }

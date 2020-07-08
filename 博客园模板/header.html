@@ -197,6 +197,8 @@ var MyblOg = {
                     document.getElementById("header").style.marginLeft = offsetLeft + "px";
                 };
             }else{
+                document.getElementById("sideBar").style.width = "100%";
+                document.getElementById("header").style.marginLeft = "0px";
                 if (document.getElementById("mainContent").style.float == 'right' && document.getElementById("sideBar").style.display == 'block') {     
                     document.getElementById("mainContent").style.float = "none";
                     document.getElementById("sideBar").style.display = "none";
@@ -214,7 +216,32 @@ window.onload=function(){
     /*页面加载完成之后生成博客目录*/
     MyblOg.createBlogDirectory("cnblogs_post_body","h2","h3",20);
     MyblOg.createSideBar();
-}
+};
+
+window.onresize = function(){
+    var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    if(w > 1067){
+        
+        document.getElementById("mainContent").style.float = "right";
+        document.getElementById("sideBar").style.display = "block";
+        
+        /*获取网页可用高度*/
+        var h = window.innerHeight || document.documentElement.clientHeight|| document.body.clientHeight;
+        document.getElementById("sideBar").style.height = h + "px";
+        /*获取#mainContent到左边的距离*/
+        var offsetLeft = document.getElementById("mainContent").offsetLeft;
+        document.getElementById("sideBar").style.width = offsetLeft + "px";
+        document.getElementById("header").style.marginLeft = offsetLeft + "px";
+        
+    }else{
+        
+        document.getElementById("sideBar").style.width = "100%";
+        document.getElementById("header").style.marginLeft = "0px";
+        document.getElementById("mainContent").style.float = "none";
+        document.getElementById("sideBar").style.display = "none";
+        
+    };
+};
 
 //通过滚动条控制导航条的展现隐藏
 var oldScrollNum = 0;
@@ -222,14 +249,14 @@ window.onscroll = function(){
     var t = document.documentElement.scrollTop || document.body.scrollTop;
     if (t>oldScrollNum) {//下滑
         if (t>27) {
-            $("#navigator").css("margin-top","-107px");//顶部导航
+            $("#navigator").css("margin-top","-107px");
         }
     } else if (t == 0) {
-        $("#navigator").css("margin-top","0px");//顶部导航
+        $("#navigator").css("margin-top","0px");
     } else {//上拉
         //防止用a链接跳转也触发效果
         if (oldScrollNum-t<20) {
-            $("#navigator").css("margin-top","-67px");//顶部导航
+            $("#navigator").css("margin-top","-67px");
         }
     }
     oldScrollNum = t;
