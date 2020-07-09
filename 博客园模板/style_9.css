@@ -574,62 +574,62 @@ p #commentbox_opt {
 
 
 #sidebar_news{
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
     border-radius: 2px;
     margin: 10px;
 }
 .mySearch{
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
     border-radius: 2px;
     margin: 10px;
 }
 #calendar{
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
     border-radius: 2px;
     margin: 10px; 
 }
 #sidebar_shortcut{
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
     border-radius: 2px;
     margin: 10px; 
 }
 #sidebar_recentposts{
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
     border-radius: 2px;
     margin: 10px; 
 }
 #sidebar_toptags{
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
     border-radius: 2px;
     margin: 10px;
 }
 #sidebar_scorerank{
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
     border-radius: 2px;
     margin: 10px;
 }
 #sidebar_categories{
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
     border-radius: 2px;
     margin: 10px;
 }
 #sidebar_recentcomments{
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
     border-radius: 2px;
     margin: 10px;
 }
 #sidebar_topviewedposts{
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
     border-radius: 2px;
     margin: 10px;
 }
 #sidebar_topcommentedposts{
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
     border-radius: 2px;
     margin: 10px;
 }
 #sidebar_topdiggedposts{
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
     border-radius: 2px;
     margin: 10px;
 }
